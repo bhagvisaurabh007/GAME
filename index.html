@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="connect.php" type=""></script>
+    <script src="./website.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- start header  -->
+    <header>
+        <a href="#" class="logo">Gammers</a>
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#tournaments">Touraments</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#formfillup">Login</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchBx">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <input type="text" placeholder="Search Games">
+            </div>
+        </div>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+    </header>
+    <!-- end of header  -->
+    <!-- Banner  -->
+    <div class="banner animeX" id="home">
+        <div class="bg">
+            <div class="content">
+                <h2>A New Home For <br>
+                    Game Lovers</h2>
+                <p>Take Your Game to Next Level.</p>
+                <div class="button"><a href="#" class="btn">Join Now</a></div>
+            </div>
+            <!-- <img src="/photo/bk.png" alt="" srcset=""> -->
+            <!-- end of banner  -->
+            <!-- slides  -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./photo/bk.png" height="750" width="650">
+                    <div class="text"></div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./photo/bq.png" height="750" width="650">
+                    <div class="text"></div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./photo/bs.png" height="750" width="650">
+                    <div class="text"></div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+    <!-- end of slides  -->
+    <!-- About  -->
+    <div class="about animeX" id="about">
+        <div class="contentBx">
+            <h2>About</h2>
+            <p>Welcome to our gaming community! We are passionate gamers just like you, and we love bringing gamers
+                together from all around the world to share their love for gaming. Our community is dedicated to
+                providing a safe and inclusive space for all types of gamers, no matter what your skill level or
+                preferred platform may be.
+                We offer a wide range of gaming resources, from the latest news and reviews to in-depth guides and
+                tutorials. Our team of expert writers and contributors are always on the lookout for the latest trends
+                and insights in the gaming industry, so you can stay up-to-date on all the latest developments.
+            </p>
+            <a href="#">Read more</a>
+        </div>
+        <img src="./photo/cc.png" alt="" srcset="" height="450" width="670">
+    </div>
+    <!-- end of abouts -->
+    <!-- games  -->
+    <div class="games animeX" id="games">
+        <h2>Popular Games</h2>
+        <ul>
+            <li class="list active" data-filter="all">All</li>
+            <li class="list " data-filter="pc">Pc games</li>
+            <li class="list " data-filter="Mobile">Mobile games</li>
+        </ul>
+        <div class="cardBx">
+            <div class="card item" data-item="pc">
+                <img src="./photo/bz.jpg" alt="" srcset="">
+                <div class="content">
+                    <h4>GTA V</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$1000</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card item" data-item="pc">
+                <img src="./photo/ch.jpg" alt="" srcset="">
+                <div class="content">
+                    <h4>ASSASSINS CREED</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$100</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card item" data-item="pc">
+                <img src="./photo/b.jpg" alt="" srcset="">
+                <div class="content">
+                    <h4>TOMB RIDER</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$100</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card item" data-item="pc">
+                <img src="./photo/o.jpg" alt="" srcset="">
+                <div class="content">
+                    <h4>WATCH DOG II</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$100</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card item" data-item="pc">
+                <img src="./photo/c.jpg" alt="" srcset="">
+                <div class="content">
+                    <h4>WITCHERS WILD</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$100</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card item" data-item="pc">
+                <img src="./photo/ac.jpg" alt="" srcset="">
+                <div class="content">
+                    <h4>GOD OF WAR </h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$100</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile  -->
+            <div class="card item" data-item="Mobile">
+                <img src="./photo/am.jpg" alt="" srcset="">
+                <div class="content">
+                    <h4>CALL OF DUTY</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$100</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card item" data-item="Mobile">
+                <img src="./photo/ay.jpg" alt="" srcset="">
+                <div class="content">
+                    <h4>FREE FIRE</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$100</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card item" data-item="Mobile">
+                <img src="./photo/bg.png" alt="" srcset="">
+                <div class="content">
+                    <h4>SHADOW FIGHT</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$100</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card item" data-item="Mobile">
+                <img src="./photo/bt.jpg" alt="" srcset="">
+                <div class="content">
+                    <h4>ASPHALT</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$100</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card item" data-item="Mobile">
+                <img src="./photo/ad.jpg" alt="" srcset="">
+                <div class="content">
+                    <h4>SPIDERMAN WAVE THE CITY</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$100</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card item" data-item="Mobile">
+                <img src="./photo/p.jpg" alt="" srcset="">
+                <div class="content">
+                    <h4>BGMI</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>$100</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of games -->
+    <!-- TOURNAMENTS -->
+    <div class="tournaments animeX" id="tournaments">
+        <h2>Live tournaments</h2>
+        <div class="boxBx">
+            <div class="box">
+                <img src="./photo/1 (1).jpg" alt="" srcset="">
+                <div class="content">
+                    <h4><span>50</span>Matches in progress...</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorem illo molestias?
+                        Nostrum, labore! Aliquam accusamus nesciunt non, accusantium similique vel sequi ab ad
+                        eligendi hic assumenda amet optio earum?</p>
+                    <div class="btn">
+                        <a href="#" class="watch">watch</a>
+                        <a href="#" class="join">join now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./photo/1 (17).jpg" alt="" srcset="">
+                <div class="content">
+                    <h4><span>50</span>Matches in progress...</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorem illo molestias?
+                        Nostrum, labore! Aliquam accusamus nesciunt non, accusantium similique vel sequi ab ad
+                        eligendi hic assumenda amet optio earum?</p>
+                    <div class="btn">
+                        <a href="#" class="watch">watch</a>
+                        <a href="#" class="join">join now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./photo/1 (6).jpg" alt="" srcset="">
+                <div class="content">
+                    <h4><span>50</span>Matches in progress...</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorem illo molestias?
+                        Nostrum, labore! Aliquam accusamus nesciunt non, accusantium similique vel sequi ab ad
+                        eligendi hic assumenda amet optio earum?</p>
+                    <div class="btn">
+                        <a href="#" class="watch">watch</a>
+                        <a href="#" class="join">join now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./photo/1 (18).jpg" alt="" srcset="">
+                <div class="content">
+                    <h4><span>50</span>Matches in progress...</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorem illo molestias?
+                        Nostrum, labore! Aliquam accusamus nesciunt non, accusantium similique vel sequi ab ad
+                        eligendi hic assumenda amet optio earum?</p>
+                    <div class="btn">
+                        <a href="#" class="watch">watch</a>
+                        <a href="#" class="join">join now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./photo/1 (10).jpg" alt="" srcset="">
+                <div class="content">
+                    <h4><span>50</span>Matches in progress...</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorem illo molestias?
+                        Nostrum, labore! Aliquam accusamus nesciunt non, accusantium similique vel sequi ab ad
+                        eligendi hic assumenda amet optio earum?</p>
+                    <div class="btn">
+                        <a href="#" class="watch">watch</a>
+                        <a href="#" class="join">join now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./photo/1 (1).jpg" alt="" srcset="">
+                <div class="content">
+                    <h4><span>50</span>Matches in progress...</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorem illo molestias?
+                        Nostrum, labore! Aliquam accusamus nesciunt non, accusantium similique vel sequi ab ad
+                        eligendi hic assumenda amet optio earum?</p>
+                    <div class="btn">
+                        <a href="#" class="watch">watch</a>
+                        <a href="#" class="join">join now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./photo/1 (1).jpg" alt="" srcset="">
+                <div class="content">
+                    <h4><span>50</span>Matches in progress...</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorem illo molestias?
+                        Nostrum, labore! Aliquam accusamus nesciunt non, accusantium similique vel sequi ab ad
+                        eligendi hic assumenda amet optio earum?</p>
+                    <div class="btn">
+                        <a href="#" class="watch">watch</a>
+                        <a href="#" class="join">join now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./photo/1 (1).jpg" alt="" srcset="">
+                <div class="content">
+                    <h4><span>50</span>Matches in progress...</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorem illo molestias?
+                        Nostrum, labore! Aliquam accusamus nesciunt non, accusantium similique vel sequi ab ad
+                        eligendi hic assumenda amet optio earum?</p>
+                    <div class="btn">
+                        <a href="#" class="watch">watch</a>
+                        <a href="#" class="join">join now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of touraments  -->
+    <!-- contact form  -->
+    <div class="contact animeX" id="contact">
+        <img src="./photo/gaming-chair.jpg" alt="" srcset="">
+        <div class="form">
+            <form action="connect.php" method="post">
+                <h1>Contact Us</h1>
+                <div class="inputbox">
+                    <p>Enter Name</p>
+                    <input type="text" placeholder="Full Name" name="fname">
+                </div>
+                <div class="inputbox">
+                    <p>Email</p>
+                    <input type="email" placeholder="email" name="email">
+                </div>
+                <div class="inputbox">
+                    <p>Message</p>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="write your message here"></textarea>
+                </div>
+                <div class="inputbox">
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- end of contact form  -->
+    <!-- login page  -->
+    <div class="formfillup animeX" id="formfillup">
+        <div class="login-box">
+            <span class="borderline"></span>
+            <form action="connect.php" method="post">
+                <h2>Sign In</h2>
+                <div class="logininputbox">
+                    <input type="text" required="required" name="login">
+                    <span>username</span>
+                    <i></i>
+                </div>
+                <div class="logininputbox">
+                    <input type="password" required="required" name="password">
+                    <span>password</span>
+                    <i></i>
+                </div>
+                <div class="loginlinks">
+                    <a href="#">Forgot password</a>
+                    <a href="#">Signup</a>
+                </div>
+                <input type="submit" value="login">
+            </form>
+            <script>
+                // Check for success message in URL query string
+                const params2 = new URLSearchParams(window.location.search);
+                const login = params2.get('login');
+                // If success message is present, display it
+                if (login === '1') {
+                    alert('Logged in successfully!');
+                    history.replaceState(null, null, window.location.pathname);
+                }
+            </script>
+        </div>
+    </div>
+    <!-- end of login page -->
+    <!-- footer  -->
+    <footer>
+        <div class="info">
+            <a href="#" class="logo">GAMMERS</a>
+            <p>2023 All Rights Reserved</p>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- footter  -->
+    <script>
+        // sticky navbar 
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+        // flexbile card 
+        let list = document.querySelectorAll('.list');
+        let card = document.querySelectorAll('.card');
+        for (let i = 0; i < list.length; i++) {
+            list[i].addEventListener('click', function () {
+                for (let j = 0; j < list.length; j++) {
+                    list[j].classList.remove('active');
+                }
+                this.classList.add('active');
+                let dataFilter = this.getAttribute('data-filter');
+                for (let k = 0; k < card.length; k++) {
+                    card[k].classList.remove('active');
+                    card[k].classList.add('hide');
+                    if (card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all') {
+                        card[k].classList.remove('hide');
+                        card[k].classList.add('active');
+                    }
+                }
+            })
+        }
+        // flexible cards 
+        // responsive navbar
+        function toggleMenu() {
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const nav = document.querySelector('.nav');
+            toggleMenu.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+        // scrolling animation effect 
+        window.addEventListener('scroll', function () {
+            var anime = document.querySelectorAll('.animeX');
+            for (var s = 0; s < anime.length; s++) {
+                var windowheight = window.innerHeight;
+                var animetop = anime[s].getBoundingClientRect().top;
+                var animepoint = 150;
+                if (animetop < windowheight - animepoint) {
+                    anime[s].classList.add('active');
+                }
+                else {
+                    anime[s].classList.remove('active');
+                }
+            }
+        })
+        // smooth scrolling
+        // slides 
+        document.addEventListener("DOMContentLoaded", function (event) {
+            let slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 3000); // Change image every 3 seconds
+            }
+            // Get all the filter buttons
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            // Get all the items to be filtered
+            const items = document.querySelectorAll('.item');
+            // Add click event listener to each filter button
+            filterBtns.forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    const category = btn.dataset.item;
+                    // Loop through all the items
+                    items.forEach(function (item) {
+                        // Check if the item's data-category matches the selected category or if the selected category is 'all'
+                        if (item.dataset.item === category || category === 'all') {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                    // Add the active class to the clicked button
+                    filterBtns.forEach(function (btn) {
+                        btn.classList.remove('active');
+                    });
+                    btn.classList.add('active');
+                });
+            });
+        })
+        // slides
+        </script>
+</body>
+</html>
